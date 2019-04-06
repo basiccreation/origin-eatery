@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { styles } from "../../../utils"
+import { cpus } from "os"
 
 export default class NavbarLinks extends Component {
   state = {
@@ -46,4 +47,23 @@ export default class NavbarLinks extends Component {
   }
 }
 
-const LinkWrapper = styled.ul``
+const LinkWrapper = styled.ul`
+  li {
+    list-style-type: none;
+  }
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    color: ${styles.colors.mainGrey};
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    ${styles.transDefault};
+    &:hover {
+      background: ${styles.colors.mainGrey};
+      color: ${styles.colors.mainYellow};
+      padding: 0.5rem 1rem 0.5rem 1.3rem;
+    }
+  }
+`
