@@ -1,12 +1,14 @@
 import React from "react"
-import { FaBeer } from "react-icons/fa"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import { HomeHeader } from "../utils"
+import img from "../images/bcg/homeBcg.jpeg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hello From Index on Origin Eatery</h1>
+    <HomeHeader img={img}>
+      <h1>Hello From homeheader</h1>
+    </HomeHeader>
   </Layout>
 )
 
