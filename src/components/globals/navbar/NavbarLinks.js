@@ -66,4 +66,7 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
+
+  height: ${props => (props.open ? "152px" : "0px")};
+  overflow: hidden;
 `
