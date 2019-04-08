@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../utils"
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa"
+import { FaInstagram, FaTwitter } from "react-icons/fa"
 export default class Footer extends Component {
   state = {
     icons: [
